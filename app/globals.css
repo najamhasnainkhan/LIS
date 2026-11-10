@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input { @apply w-full rounded border border-slate-300 px-3 py-2 text-sm; }
+.btn { @apply rounded bg-teal-700 px-4 py-2 text-sm font-medium text-white hover:bg-teal-800 disabled:opacity-50; }
+@media print {
+  body * { visibility: hidden; }
+  .print-area, .print-area * { visibility: visible; }
+  .print-area { position: absolute; left: 0; top: 0; }
+  .no-print { display: none; }
+}
+.btn-secondary { @apply rounded border border-slate-300 bg-white px-4 py-2 text-sm hover:bg-slate-50; }
